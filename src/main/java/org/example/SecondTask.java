@@ -18,11 +18,12 @@ public class SecondTask {
         }
         int row_num = -1;
         Map<String, Integer> tags = new HashMap<>();
+        String[] words;
         for (int i = 0; i < lines.size(); i++) {
             if (lines.get(i) == null) {
                 throw new IllegalArgumentException("List element must not be null");
             }
-            String[] words = lines.get(i).split(" ");
+            words = lines.get(i).split(" ");
             for (int j = 0; j < words.length; j++) {
                 if (words[j].charAt(0) == '#') {
                     if (!tags.containsKey(words[j])) {

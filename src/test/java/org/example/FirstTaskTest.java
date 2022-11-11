@@ -16,10 +16,8 @@ class FirstTaskTest {
 
             //given
             int[] arr=new int []{1,2,3,4,5,6,7,8,8,-3,-5,-6,-7,-9};
-
             //when
             List<Integer>res=FirstTask.getPositiveSort(arr);
-
             //then
             assertEquals(Arrays.asList(8,8,7,6,5,4,3,2,1),res);
     }
